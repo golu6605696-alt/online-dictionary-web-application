@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    background: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4f46e5;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #4f46e5;
+}
+
+button#searchBtn {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 15px;
+}
+
+#wordTitle {
+    font-size: 2rem;
+    color: #1a202c;
+    text-transform: capitalize;
+}
+
+#phonetic {
+    color: #6366f1;
+    font-weight: 500;
+}
+
+#audioBtn {
+    background: #eef2ff;
+    border: none;
+    color: #4f46e5;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+#pos {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #718096;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#meaning {
+    margin-top: 8px;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+.example-box {
+    margin-top: 20px;
+    background: #f8fafc;
+    padding: 15px;
+    border-left: 4px solid #818cf8;
+}
+
+.label {
+    font-size: 10px;
+    font-weight: 800;
+    color: #94a3b8;
+    margin-bottom: 5px;
+}
+
+#example {
+    font-style: italic;
+    color: #475569;
+}
+
+.info-msg {
+    text-align: center;
+    color: #64748b;
+    margin-top: 20px;
+}
+
+.error-text {
+    color: #ef4444;
+}

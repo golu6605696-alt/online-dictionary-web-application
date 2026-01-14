@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Word Dictionary</h1>
+
+        <div class="search-box">
+            <input type="text" id="wordInput" placeholder="Enter an English word...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="result" class="result-container hidden">
+            <div class="header">
+                <div class="title-area">
+                    <h2 id="wordTitle"></h2>
+                    <p id="phonetic"></p>
+                </div>
+                <button id="audioBtn" class="hidden">🔊 Play Audio</button>
+            </div>
+
+            <div class="content">
+                <div class="meaning-section">
+                    <span id="pos"></span>
+                    <p id="meaning"></p>
+                </div>
+                <div class="example-box">
+                    <p class="label">EXAMPLE</p>
+                    <p id="example"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="message" class="info-msg">
+            Search for a word to see its meaning.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
